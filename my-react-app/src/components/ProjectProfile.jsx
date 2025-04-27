@@ -1,5 +1,3 @@
-//import screenshotconsole from '../assets/js-lesson-1-console.png';
-//import screenshotcode from '../assets/js-lesson-1-code.png';
 import '../components/ProjectProfile.css';
 
 function ProjectProfile(props) {
