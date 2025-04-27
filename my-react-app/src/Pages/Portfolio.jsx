@@ -5,11 +5,18 @@ import screenshotconsole7 from './assets/js-lesson-7-console.png';
 import screenshotcode1 from './assets/js-lesson-1-code.png';
 import screenshotcode5 from './assets/js-lesson-5-code.png';
 import screenshotcode7 from './assets/js-lesson-7-code.png';*/
-
+import { useState } from "react";
 
 function Portfolio() {
+    
+    const [showPortfolio, setShowPortfolio] = useState(false);
+    
     return <div>
         <p>This is my portfolio</p>
+        <button className="portfolio-btn" onClick={() => setShowPortfolio(!showPortfolio)}>Show Portfolio</button>
+        {showPortfolio && <div className="div-projects">
+            <p>This should be all my projects, but the links doesn't work, so for now you have to settle with this p-tag.</p>
+        </div>}
         
         </div>
 }

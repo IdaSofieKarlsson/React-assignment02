@@ -1,5 +1,11 @@
+import { useState } from "react";
+
 function Home() {
-    return <div><p>This is my homepage.</p></div>
+    
+    return <div>
+        <p>This is my homepage.</p>
+      
+    </div>;
 }
 
 export default Home;
